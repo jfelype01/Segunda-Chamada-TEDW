@@ -1,0 +1,553 @@
+:root {
+
+    --bg-dark: #0b1020;
+    --bg-dark-2: #111a31;
+
+    --primary: #6c63ff;
+    --primary-light: #8b84ff;
+
+    --accent: #00d9ff;
+
+    --text-dark: #172033;
+    --text-muted: #697386;
+
+    --light-bg: #f5f7fb;
+
+    --white: #ffffff;
+
+    --border: #e7eaf1;
+
+}
+
+html {
+
+    scroll-behavior: smooth;
+
+    scroll-padding-top: 72px;
+
+}
+
+
+body {
+
+    font-family:
+        Inter,
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    color: var(--text-dark);
+
+    background: var(--white);
+
+    overflow-x: hidden;
+
+}
+
+.navbar {
+
+    background: rgba(11, 16, 32, 0.94);
+
+    backdrop-filter: blur(12px);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    min-height: 68px;
+
+}
+
+
+.navbar-brand {
+
+    letter-spacing: 0.3px;
+
+}
+
+
+.nav-link {
+
+    color:
+        rgba(255, 255, 255, 0.78) !important;
+
+    transition:
+        color 0.2s ease;
+
+}
+
+
+.nav-link:hover {
+
+    color:
+        var(--white) !important;
+
+}
+
+.hero-section {
+
+    color: var(--white);
+
+    background:
+
+        radial-gradient(circle at 80% 25%,
+            rgba(108, 99, 255, 0.32),
+            transparent 28%),
+
+        radial-gradient(circle at 15% 80%,
+            rgba(0, 217, 255, 0.13),
+            transparent 25%),
+
+        linear-gradient(135deg,
+            var(--bg-dark),
+            var(--bg-dark-2));
+
+}
+
+
+.hero-badge {
+
+    background:
+        rgba(108, 99, 255, 0.16);
+
+    color:
+        #b9b5ff;
+
+    border:
+        1px solid rgba(139, 132, 255, 0.35);
+
+    padding:
+        0.65rem 0.85rem;
+
+    letter-spacing:
+        1px;
+
+}
+
+
+.hero-section h1 {
+
+    max-width:
+        720px;
+
+    letter-spacing:
+        -1.5px;
+
+}
+
+
+.hero-section .lead {
+
+    max-width:
+        650px;
+
+    color:
+        rgba(255, 255, 255, 0.72);
+
+    line-height:
+        1.7;
+
+}
+
+
+.btn-primary {
+
+    background:
+        var(--primary);
+
+    border-color:
+        var(--primary);
+
+    border-radius:
+        10px;
+
+    transition:
+        transform 0.2s ease,
+        background 0.2s ease;
+
+}
+
+
+.btn-primary:hover {
+
+    background:
+        var(--primary-light);
+
+    border-color:
+        var(--primary-light);
+
+    transform:
+        translateY(-2px);
+
+}
+
+
+.hero-card {
+
+    padding:
+        3rem 2rem;
+
+    text-align:
+        center;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius:
+        24px;
+
+    background:
+        rgba(255, 255, 255, 0.055);
+
+    box-shadow:
+        0 25px 70px rgba(0, 0, 0, 0.22);
+
+}
+
+
+.hero-card i {
+
+    color:
+        var(--accent);
+
+}
+
+.section-padding {
+
+    padding:
+        100px 0;
+
+}
+
+
+.section-label {
+
+    color:
+        var(--primary);
+
+    font-size:
+        0.78rem;
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        2px;
+
+}
+
+
+.section-title {
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -0.7px;
+
+}
+
+
+.section-description {
+
+    max-width:
+        600px;
+
+    line-height:
+        1.7;
+
+}
+
+.info-box {
+
+    background:
+        var(--light-bg);
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        20px;
+
+    padding:
+        12px 28px;
+
+}
+
+
+.info-item {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+
+    padding:
+        22px 0;
+
+}
+
+
+.info-item+.info-item {
+
+    border-top:
+        1px solid var(--border);
+
+}
+
+
+.icon-box {
+
+    width:
+        48px;
+
+    height:
+        48px;
+
+    flex:
+        0 0 48px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        12px;
+
+    color:
+        var(--primary);
+
+    background:
+        rgba(108, 99, 255, 0.10);
+
+    font-size:
+        1.2rem;
+
+}
+
+.products-section {
+
+    background:
+        var(--light-bg);
+
+}
+
+
+.product-card {
+
+    border:
+        1px solid var(--border);
+
+    border-radius:
+        18px;
+
+    overflow:
+        hidden;
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+
+}
+
+
+.product-card:hover {
+
+    transform:
+        translateY(-6px);
+
+    box-shadow:
+        0 18px 45px rgba(23, 32, 51, 0.10);
+
+}
+
+
+.product-image {
+
+    height:
+        210px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    font-size:
+        5rem;
+
+}
+
+
+.product-notebook {
+
+    color:
+        #6c63ff;
+
+    background:
+        linear-gradient(135deg,
+            #e9e7ff,
+            #f5f4ff);
+
+}
+
+
+.product-monitor {
+
+    color:
+        #008da8;
+
+    background:
+        linear-gradient(135deg,
+            #dffaff,
+            #effdff);
+
+}
+
+
+.product-keyboard {
+
+    color:
+        #b04ad4;
+
+    background:
+        linear-gradient(135deg,
+            #f5e6fb,
+            #fbf3ff);
+
+}
+
+
+.product-tag {
+
+    font-size:
+        0.68rem;
+
+    font-weight:
+        800;
+
+    color:
+        var(--primary);
+
+    letter-spacing:
+        1.2px;
+
+}
+
+
+.product-card p {
+
+    line-height:
+        1.65;
+
+}
+
+
+.product-footer {
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        space-between;
+
+    padding-top:
+        12px;
+
+    margin-top:
+        20px;
+
+    border-top:
+        1px solid var(--border);
+
+    color:
+        var(--primary);
+
+    font-size:
+        0.85rem;
+
+}
+
+.cta-section {
+
+    padding:
+        80px 0;
+
+    color:
+        var(--white);
+
+    background:
+        linear-gradient(135deg,
+            #111a31,
+            #0b1020);
+
+}
+
+
+.cta-icon {
+
+    font-size:
+        2.5rem;
+
+    color:
+        var(--accent);
+
+}
+
+.footer {
+
+    padding:
+        35px 0;
+
+    color:
+        var(--white);
+
+    background:
+        #070b16;
+
+}
+
+
+.footer-brand {
+
+    color:
+        var(--white);
+
+    text-decoration:
+        none;
+
+    font-weight:
+        700;
+
+    font-size:
+        1.05rem;
+
+}
+
+
+.footer-brand:hover {
+
+    color:
+        var(--accent);
+
+}
+
+.product-image {
+    height: 220px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
